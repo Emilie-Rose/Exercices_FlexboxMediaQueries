@@ -1,0 +1,32 @@
+#container{
+  border: 15px 15px;
+  height: 150px;
+  display: flex;
+}
+.containerYellow{
+  width: 73%;
+  background-color: Yellow;
+  flex-grow: 5;
+
+}
+.containerGreen{
+  width: 12%;
+  background-color: green;
+  border: 2px solid black;
+}
+/* si ecran est >- 980px alors ... */
+@media all and (max-width: 980px) {
+  #container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    /* separer les contener  */
+    justify-content: space-between;
+    background-color: grey;
+  }
+  .containerYellow{
+    width: 100%;
+  }
+  .containerGreen{
+    width: 20%;
+  }

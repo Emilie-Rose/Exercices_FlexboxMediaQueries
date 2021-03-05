@@ -1,0 +1,27 @@
+#container{
+  width:100%;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 30px;
+}
+.box{
+  background-color: lightblue;
+  padding: 15px;
+  border: 1px solid blue;
+  text-align: center;
+}
+/* tablette */
+@media screen and (max-width: 1024px){
+    #container{
+      flex-wrap: wrap;
+    }
+/* mobile */
+@media screen and (max-width: 780px){
+    #container{
+      flex-direction: column;
+      height:auto
+      }
+}

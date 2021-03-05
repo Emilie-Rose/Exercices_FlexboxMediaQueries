@@ -1,0 +1,11 @@
+.echec {
+    display: flex;
+    /* wrap-reverse pour renverser l'ordre en horizontal */
+    flex-wrap: wrap-reverse;
+    flex-direction: column;
+    width: 50%;
+    height: 150px;
+}
+.piece figcaption {
+  display: none;
+}
